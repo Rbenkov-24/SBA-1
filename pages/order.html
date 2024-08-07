@@ -26,11 +26,11 @@
       <form action="#" method="#">
         <label
           >Name:
-          <input type="text" name="name" required />
+          <input type="text" name="name" required placeholder="Enter your Full Name"/>
         </label>
         <label
           >Email:
-          <input type="email" name="email" required />
+          <input type="email" name="email" required placeholder="Enter Your Email"/>
         </label>
         <label
           >Cake Type:
@@ -38,16 +38,18 @@
             <option value="select type">Select Type</option>
             <option value="Chocolate Cake">Chocolate Cake</option>
             <option value="Apple Pie">Apple Pie</option>
-            <option value="Red Valvet Cake">Red Valvet Cake</option>
+            <option value="Lemon Cake">Lemon Cake</option>
           </select>
         </label>
         <span>Delivery or Pickup:</span>
-        <label>
-          <input type="radio" name="answer" value="delivery" />Delivery
-        </label>
-        <label>
-          <input type="radio" name="answer" value="pickup" />Pickup
-        </label>
+        <div class="radio-group">
+          <label>
+            <input type="radio" name="answer" value="delivery" />Delivery
+          </label>
+          <label>
+            <input type="radio" name="answer" value="pickup" />Pickup
+          </label>
+        </div>
         <label
           >Special Requests:
           <textarea name="message" rows="8"></textarea>

@@ -35,7 +35,7 @@ footer{
     margin: 0;
 }
 .navbar li{
-    margin: 0 15px;
+    margin: 0 40px;
     font-size: 16px;
 }
 .navbar a{
@@ -43,6 +43,10 @@ footer{
     color: azure;
     font-size: 25px;
     display: inline-block;
+    transition: font-size 0.3s ease;
+}
+.navbar a:hover{
+    color: rgb(41, 108, 32);
 }
 
 .menu-container{
@@ -52,22 +56,24 @@ footer{
     min-height: calc(100vh - 100px);
 }
 .menu-container h1{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 0px;
     font-size: 36px;
     color: #333;
     text-align: center;
 }
 .menu-table{
-    width: 100%;
+    width: 70%;
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 0 10px #0000001a;
     border-radius: 8px;
     margin: 0 auto;
+    
 }
 .menu-table th, .menu-table td{
     padding: 20px;
-    text-align: left;
+    text-align: center;
 }
 .menu-table th{
     background-color: #333;
@@ -78,8 +84,27 @@ footer{
     vertical-align: top;
 }
 .menu-image{
-    width: 15px;
+    width: 50px;
     height: auto;
     border-radius: 8px;
     margin-right: 20px;
+    transition: transform 0.3s ease;
+}
+.menu-image:hover{
+    transform: scale(1.2);
+    
+}
+.gif{
+    height: 200px;
+    width: 200px;
+    margin-top: 80px;
+    
+    
+}
+.gif-container{
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    padding: 10px;
+    
 }

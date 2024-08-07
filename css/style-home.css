@@ -36,7 +36,7 @@ footer{
     margin: 0;
 }
 .navbar li{
-    margin: 0 15px;
+    margin: 0 40px;
     font-size: 16px;
 }
 .navbar a{
@@ -44,23 +44,28 @@ footer{
     color: azure;
     font-size: 25px;
     display: inline-block;
+    transition: font-size 0.3s ease;
+}
+.navbar a:hover{
+    color: rgb(41, 108, 32);
 }
 
 
 .content-container{
     text-align: center;
     background-color: #fff;
-    border-radius: 8px;
     padding: 30px;
-    width: 80%;
-    max-width: 800px;
-    box-shadow: 0 0 10px #0000001a;
+    width: 100%;
+    box-shadow: 0 0 10px rgb(0,0,0.1);
+    height: calc(50vh - 60px); /**check this**/
+    margin-top: 200px;
 }
 .welcome-image{
     width: 100%;
     height: auto;
-    max-width: 200px;
-    border-radius: 20px;
+    max-width: 300px;
+    border-radius: 5px;
+    margin-top: -0px; /**check this**/
 }
 .cta-button{
     display: inline-block;
@@ -71,4 +76,16 @@ footer{
     text-decoration: none;
     border-radius: 4px;
     font-size: 18px;
+}
+.hover{
+    transition: font-size 0.3s ease;
+}
+.hover:hover{
+    font-size:24px;
+    transform: rotate(20deg)
+}
+#searchbar{
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
 }
