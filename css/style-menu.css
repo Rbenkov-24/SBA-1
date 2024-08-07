@@ -65,6 +65,18 @@ footer{
     border-radius: 8px;
     margin: 0 auto;
 }
+.menu-table th, .menu-table td{
+    padding: 20px;
+    text-align: left;
+}
+.menu-table th{
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+.menu-table td{
+    vertical-align: top;
+}
 .menu-image{
     width: 15px;
     height: auto;
