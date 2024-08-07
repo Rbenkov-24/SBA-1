@@ -46,16 +46,28 @@ footer{
 }
 
 .menu-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
     background-color: blanchedalmond;
     box-sizing: border-box;
-    min-height: calc(100vh-100px);
+    min-height: calc(100vh - 100px);
 }
 .menu-container h1{
     margin-bottom: 20px;
     font-size: 36px;
     color: #333;
+    text-align: center;
+}
+.menu-table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px #0000001a;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+.menu-image{
+    width: 15px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
 }
