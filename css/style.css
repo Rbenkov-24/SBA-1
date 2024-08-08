@@ -1,0 +1,243 @@
+/**general style**/
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url(../pictures/blue1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+/**footer style**/
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: #333;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/**navigation bar style**/
+.navbar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 20px;
+  background-color: #333;
+  z-index: 1;
+  padding: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.navbar li {
+  margin: 0 40px;
+  font-size: 16px;
+}
+.navbar a {
+  text-decoration: none;
+  color: azure;
+  font-size: 25px;
+  display: inline-block;
+  transition: font-size 0.3s ease;
+}
+.navbar a:hover {
+  color: #00bfff;
+}
+
+/**homepage style**/
+.content-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  box-shadow: 0 0 10px rgb(0, 0, 0.1);
+  height: calc(50vh - 60px); /**check this**/
+  margin-top: 200px;
+}
+.cta-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.hover {
+  transition: font-size 0.3s ease;
+}
+.hover:hover {
+  font-size: 24px;
+}
+#searchbar{
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 20px auto 0;
+}
+
+/**contact page style**/
+.contact-container {
+  height: calc(100vh - 60px);
+  padding: 20px;
+  margin-top: 60px;
+}
+
+#form h2 {
+  margin-top: 0;
+  text-align: center;
+}
+form input,
+form textarea {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+#form textarea {
+  resize: vertical;
+}
+#button {
+  display: block;
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+}
+/**menu page style**/
+
+.menu-container h1 {
+  margin-bottom: 10px;
+  margin-top: 0px;
+  font-size: 36px;
+  color: white;
+  text-align: center;
+}
+.menu-table {
+  width: 70%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+.menu-table th,
+.menu-table td {
+  padding: 20px;
+  text-align: center;
+}
+.menu-table th {
+  background-color: #333;
+  color: white;
+  font-size: 18px;
+}
+.menu-table td {
+  vertical-align: top;
+}
+.menu-image {
+  width: 50px;
+  height: auto;
+  border-radius: 8px;
+  margin-right: 20px;
+  transition: transform 0.3s ease;
+}
+.menu-image:hover {
+  transform: scale(1.2);
+}
+.gif {
+  height: 200px;
+  width: 200px;
+  margin-top: 80px;
+}
+.gif-container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  padding: 10px;
+}
+
+/**order page style**/
+.form-container {
+    margin: 130px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+  }
+  .form-container h1 {
+    margin-bottom: 10px;
+  }
+  .form-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+  }
+  form label {
+    margin: 5px 0;
+  }
+  form input,
+form select,
+form textarea {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+form button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+  }
+  form input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  .radio-group label{
+    display: flex;
+    align-items: center;
+  }
+  /**common style**/
+  .contact-container,
+  .form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }

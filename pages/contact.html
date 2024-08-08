@@ -1,35 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style-contact.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>contact</title>
-</head>
-<body>
+    <style>
+      #form {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+        box-shadow: 0 0 10px rgb(0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
     <div class="upper-container">
-        <nav class="navbar">
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="menu.html">MENU</a></li>
-                <li><a href="order.html">ORDER</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-        </nav>
+      <nav class="navbar">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="order.html">ORDER</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="contact-container">
-        <div id="form">
-            <h2>Get In Touch</h2>
-            <form action="#" method="#">
-                <input type="text" name="user-name" placeholder="Enter Your Full Name" required>
-                <input type="email" name="email" placeholder="Enter Your Email" required>
-                <textarea name="message" cols="30" rows="8" maxlength="200"></textarea>
-                <input type="button" value="Submit" id="button">
-            </form>
-        </div>
+      <div id="form">
+        <h2>Get In Touch</h2>
+        <form action="#" method="#">
+          <input
+            type="text"
+            name="user-name"
+            placeholder="Enter Your Full Name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <textarea
+            name="message"
+            cols="30"
+            rows="8"
+            maxlength="200"
+          ></textarea>
+          <input type="button" value="Submit" id="button" />
+        </form>
+      </div>
     </div>
     <footer>
-        <p>&copy; 2024 The Bakery House. All rights reserved.</p>
+      <p>&copy; 2024 The Bakery House. All rights reserved.</p>
     </footer>
-</body>
+  </body>
 </html>
